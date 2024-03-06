@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebkg"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/textlogo" />
+
+    <TextView
+        android:id="@+id/shopNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="Shop Name"
+        android:textColor="#341963"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="391dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="185dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:srcCompat="@drawable/default_pic" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="shopmail@gmail.com"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/shopNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/shopNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/shopNameTextView" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#261249"
+        android:text="Update Profile"
+        app:layout_constraintEnd_toEndOf="@+id/newShopName"
+        app:layout_constraintStart_toStartOf="@+id/newShopName"
+        app:layout_constraintTop_toBottomOf="@+id/newShopName" />
+
+    <EditText
+        android:id="@+id/newShopName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="Change Profile Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/emailTextView"
+        app:layout_constraintStart_toStartOf="@+id/emailTextView"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FFBEBE"
+        android:text="LogOut"
+        android:textColor="#CF0000"
+        app:icon="@drawable/baseline_logout_24"
+        app:iconTint="#CC0000"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bottomNavigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

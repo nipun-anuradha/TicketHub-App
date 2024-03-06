@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "21947808323",
+    "project_id": "tickethub-a2327",
+    "storage_bucket": "tickethub-a2327.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21947808323:android:9f5ed810739055692372f6",
+        "android_client_info": {
+          "package_name": "com.javainstitute.tickethub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21947808323-tkn1rjebq7j5q8tlnfsvs7eb0vr2bckc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.javainstitute.tickethub",
+            "certificate_hash": "1d98a7bbb8680764d475ba9f29cdbbfec1b61fa4"
+          }
+        },
+        {
+          "client_id": "21947808323-6r4vl7agdubbrcm18q6g0dvuk1g70jg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkYrxcuyO-3zc1aTVgFt9P-cQpYbrQQ_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21947808323-6r4vl7agdubbrcm18q6g0dvuk1g70jg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
